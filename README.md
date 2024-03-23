@@ -28,3 +28,6 @@ It will take some more time than harvest, the curing speed depend on plant work 
 -  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
 
 
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/3050326235]![Image](https://img.shields.io/github/v/release/emipa606/CureBlight?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
+
