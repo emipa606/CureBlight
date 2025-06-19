@@ -12,9 +12,10 @@ public static class Plant_GetGizmos
 {
     public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> values, Plant __instance)
     {
-        if (values?.Any() == true)
+        var enumerable = values as Gizmo[] ?? values.ToArray();
+        if (enumerable.Any())
         {
-            foreach (var value in values)
+            foreach (var value in enumerable)
             {
                 yield return value;
             }

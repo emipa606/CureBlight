@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cure blight -->
+  <Vic_CureBlightWorkGiver.label>cure blight</Vic_CureBlightWorkGiver.label>
+  <!-- EN: curing -->
+  <Vic_CureBlightWorkGiver.gerund>curing</Vic_CureBlightWorkGiver.gerund>
+  <!-- EN: cure -->
+  <Vic_CureBlightWorkGiver.verb>cure</Vic_CureBlightWorkGiver.verb>
+</LanguageData>
