@@ -76,8 +76,16 @@ public class JobDriver_CureBlight : JobDriver_PlantWork
         cut.defaultCompleteMode = ToilCompleteMode.Never;
         cut.WithEffect(Plant?.def.plant.IsTree ?? false ? EffecterDefOf.Harvest_Tree : EffecterDefOf.Harvest_Plant,
             TargetIndex.A);
-        cut.WithProgressBar(TargetIndex.A, () => workDone / (Plant.def.plant.harvestWork * workAmountFactor), true);
-        cut.PlaySustainerOrSound(() => Plant.def.plant.soundHarvesting);
+        cut.WithProgressBar(TargetIndex.A, () =>
+        {
+            if (Plant != null)
+            {
+                return workDone / (Plant.def.plant.harvestWork * workAmountFactor);
+            }
+
+            return 0f;
+        }, true);
+        cut.PlaySustainerOrSound(() => Plant?.def.plant.soundHarvesting);
         cut.activeSkill = () => SkillDefOf.Plants;
         yield return cut;
         var toil2 = PlantWorkDoneToil();
